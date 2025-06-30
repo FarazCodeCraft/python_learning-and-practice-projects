@@ -42,3 +42,13 @@ if (m1>=65 and m2>=55 and m3>=55):
         print("you are not eligble, try again")
 else:
     print("you have failed the exam")
+
+
+
+
+
+    # year = int(input("Enter the year number:"))
+# if (year%4==0) and (year%100==0 or year%400==0):
+#     print("yes its a leap year")
+# else:
+#     print("its not a leap year")
