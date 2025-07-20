@@ -1,16 +1,4 @@
-count = 1
-# while count <= 5:
-#     print("hello")
-#     count += 1
+def students_name(name1, name2, name3, name4, *args):
+#     return f"{name1} is liked and {name4} is also liked, but others {",".join(args)}  are disliked by teachers"
 
-
-
-# number = 1
-# while number<=100:
-#     print(number)
-#     number +=1
-
-# i = 100
-# while i>=1:
-#     print(i)
-#     i-=1
+# print(students_name("faraz", "raja", "old", "ali", "zain", "khan", "talha"))
