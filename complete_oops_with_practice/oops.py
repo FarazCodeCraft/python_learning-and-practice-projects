@@ -365,3 +365,114 @@ from abc import ABC,abstractmethod
 # vehicles = [Car(),Bike(),Bus()]
 # for i in vehicles:
 #     print(i.move())
+
+# from abc import ABC, abstractmethod
+
+# class Employee(ABC):
+#     @abstractmethod
+#     def get_details(self):
+#         pass
+
+# class Manager(Employee):
+#     def __init__(self, name):
+#         self.name = name
+
+#     def get_details(self):
+#         return f"Manager: {self.name}"
+
+# class Developer(Employee):
+#     def __init__(self, name):
+#         self.name = name
+
+#     def get_details(self):
+#         return f"Developer: {self.name}"
+
+# my_manager = Manager("Asif")
+# print(my_manager.get_details())
+
+# class Device(ABC):
+#     @abstractmethod
+#     def start(self):
+#         pass
+
+# class Laptop(Device):
+#     def start(self):
+#         return "Laptop is starting..."
+
+# class Mobile(Device):
+#     def start(self):
+#         return "Mobile is starting..."
+    
+# my_laptop = Laptop()
+# print(my_laptop.start())
+
+
+
+#6 Bank 
+# class BankAccount:
+#     def __init__(self):
+#         self.__balance = 0
+#     def deposit(self,amount):
+#         if amount<0:
+#             raise ValueError("deposit must be positive number")
+#         if not isinstance(amount,(int,float)):
+#             raise ValueError("deposit amount must be an number")
+#         self.__balance += amount
+#     def withdraw(self,amount):
+#         if amount<0:
+#             raise ValueError("withdrawl amount must be positive number")
+#         if amount>self.__balance:
+#             raise  ValueError(f"your amount is unsufficient {self.get_balance()}")
+#         self.__balance =self.__balance - amount
+#     def get_balance(self):
+#         return self.__balance
+
+# user1 = BankAccount()
+# print(user1.get_balance())
+# user1.deposit(100)
+# print(user1.get_balance())
+# print(user1.withdraw(101))
+
+
+# class Employee():
+#     def __init__(self,name,salary):
+#         self.name = name
+#         self.salary = salary
+#     def get_details(self):
+#         return f"your salary is {self.salary} with name {self.name}"
+# class Manager(Employee):
+#     def __init__(self, name, salary,department):
+#         super().__init__(name, salary)
+#         self.department = department
+#     def get_details(self):
+#         return super().get_details() + f"| Department: {self.department}"
+
+# employe1 = Employee("saad ali", 100000)
+# print(employe1.get_details())
+# manager1 = Manager("zain", 200000,"Designer")
+# print(manager1.get_details())
+
+
+# class Library():
+#     def __init__(self,item_name,item_id):
+#         self.item_name = item_name
+#         self.item_id = item_id
+#     def get_info(self):
+#         return f"Item name is:{self.item_name} | Item id is: {self.item_id}"
+# class Book(Library):
+#     def __init__(self, item_name, item_id,author):
+#         super().__init__(item_name, item_id)
+#         self.author = author
+#     def get_info(self):
+#         return super().get_info() + f"Author name is: {self.author}"
+# class DVD(Library):
+#     def __init__(self, item_name, item_id, duration):
+#         super().__init__(item_name, item_id)
+#         self.duration = duration
+#     def get_info(self):
+#         return super().get_info() + f"With duration of {self.duration} minutes"\
+        
+# my_library = Library("books and dvds", "there are different ids of books and dvds")
+# my_book = Book("Quran","last","Allah")
+# my_dvd = DVD("old dvd",234234, 30)
+# print(my_library.get_info(),my_book.get_info(),my_dvd.get_info())
