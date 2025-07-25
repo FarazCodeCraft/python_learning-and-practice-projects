@@ -298,3 +298,70 @@ SUPER() KEYWORD: super() keyword is used to access parents methods (not properti
 # 3.MULTILEVEL INHERITENCE
 # make a grandfather class and then father and then child. you can access grandfather properties in child.
 # EXAMPLE: first you ask money for your wallet,  
+
+
+
+
+
+
+
+
+"""
+PRACTICE OF ABSTRACTION
+"""
+#1
+import math
+from abc import ABC,abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+# class Dogs(Animal):
+#     def sound(self):
+#         return f" is barking"
+# class Cats(Animal):
+#     def sound(self):
+#         return f' is meowwww'
+# my_cat = Cats()
+# print(my_cat.sound())
+
+
+# #2
+# class Area(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+# class Circle(Area):
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def area(self):
+#         return f"Circle's area is {math.pi * (self.radius**2)}"
+# class Square(Area):
+#     def __init__(self,side):
+#         self.side = side
+#     def area(self):
+#         return self.side ** 2 
+    
+# c1 = Circle(5)
+# print(c1.area())
+# s1 = Square(4)
+# print(s1.area())
+
+
+#3 Vehicle move
+# class Vehicle(ABC):
+#     @abstractmethod
+#     def move(self):
+#         pass
+# class Car(Vehicle):
+#     def move(self):
+#         return f'Car move with 2 tires'
+# class Bike(Vehicle):
+#     def move(self):
+#         return f'bike move with 1 tyre'
+# class Bus(Vehicle):
+#     def move(self):
+#         return "Bus is moving"
+# vehicles = [Car(),Bike(),Bus()]
+# for i in vehicles:
+#     print(i.move())
